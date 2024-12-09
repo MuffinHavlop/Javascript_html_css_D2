@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Do you have enough coffee? ☕</h1>
+    <div id="buttons"><button onclick="
+    lackingCoffee = false; 
+    if (lackingCoffee == false){
+        getMoreCoffee();
+    }
+    "><strong>NO!</strong></button>
+    <button onclick="
+    alert('Very good, enjoy your coffee ☕');
+    "><strong>Yes</strong></button>
+    <button onclick="
+    alert(`You have had ${coffeeCupCount} so far!`);
+    "><strong>How many coffee have I had?</strong></button>
+    <button onclick="
+    coffeeCupCount = 0;
+    alert(` Oh that's not very good, I just reset your coffee count 😊`)
+    "><strong>I think I had too much</strong></button></div>
+</body>
